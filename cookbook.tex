@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{fullpage}
+\usepackage[english]{abcookbook}
+\begin{document}
+
+% For mono, set mono in the usepackage{abcookbook} options, above, and
+% comment out this call (or just change this all to black)
+\setRecipeColors{
+  recipename = red,
+  ing = black,
+  inghead = black,
+  equip = black,
+  equiphead = black,
+  prep = black,
+  hint = black,
+  hinthead = black,
+  hintline = black,
+  numeration = blue,
+}
+
+\setRecipeSizes{
+    recipename = \fontsize{25pt}{30pt},
+    ing = \normalsize,
+    inghead = \large,
+    equip = \normalsize,
+    equiphead = \large,
+    prep = \normalsize,
+    prephead = \large,
+    hint = \normalsize,
+    hinthead = \Large
+}
+
+\section{Breakfast}
+
+\include{breakfast}
+
+\section{Lunch}
+
+\section{Dinner}
+
+\section{Desserts}
+
+\include{desserts}
+
+\section{Munchables}
+
+\section{Breads}
+
+\include{breads}
+
+\end{document}
